@@ -1,1 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Serviços</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #89CFF0;
+            --secondary-color: #FFD700;
+            --dark-color: #1E90FF;
+            --light-color: #f8f9fa;
+            --success-color: #06d6a0;
+            --warning-color: #ffbe0b;
+            --danger-color: #ef476f;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-color));
+            border-bottom: 3px solid var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .services-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .services-table th {
+            background-color: var(--dark-color);
+            border-left: 3px solid var(--secondary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .services-table td {
+            padding: 12px 1rem;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .services-table tr:hover {
+            background-color: rgba(58, 134, 255, 0.05);
+        }
+
+        .services-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .service-name {
+            font-weight: 600;
+            color: var(--dark-color);
+            border-left: 3px solid var(--secondary-color);
+            border-bottom: 2px solid var(--dark-color);
+            padding: 0 10px 8px 10px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        .service-function {
+            color: #555;
+            padding-top: 8px;
+            border-top: 2px solid var(--dark-color);
+            margin-top: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .services-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- Imagem removida -->
+                </div>
+                <div>
+                    <h1>PINTURA HIDRO ARTS</h1>
+                    <p class="subtitle">Confira os nossos serviços!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="services-container">
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="service-name">Lavagem Simples</td>
+                            <td class="service-function">O que é: Limpeza básica da parte externa.<br>Benefício: Deixa o carro com aparência limpa e bem cuidada.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Lavagem Técnica</td>
+                            <td class="service-function">O que é: Limpeza mais cuidadosa e detalhada.<br>Benefício: Realça o brilho da pintura e evita danos.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização Simples</td>
+                            <td class="service-function">O que é: Limpeza interna leve.<br>Benefício: Remove sujeiras e melhora o conforto no interior.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização Plus</td>
+                            <td class="service-function">O que é: Limpeza interna mais completa.<br>Benefício: Renova o interior e elimina odores.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização de Motor</td>
+                            <td class="service-function">O que é: Limpeza da parte do motor.<br>Benefício: Mantém a aparência e facilita futuras manutenções.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização Interna por Parte</td>
+                            <td class="service-function">O que é: Limpeza feita em áreas específicas.<br>Benefício: Ideal pra cuidar de onde mais precisa, sem fazer tudo.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização de Couro (bancos)</td>
+                            <td class="service-function">O que é: Limpeza e cuidado dos bancos de couro.<br>Benefício: Mantém o couro bonito, hidratado e preservado.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Comercial One Step</td>
+                            <td class="service-function">O que é: Polimento simples de brilho.<br>Benefício: Deixa o carro com aspecto renovado.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Comercial + Silitização</td>
+                            <td class="service-function">O que é: Polimento + camada de proteção.<br>Benefício: Brilho duradouro e resistência contra sujeiras.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Técnico + Vitrificação</td>
+                            <td class="service-function">O que é: Polimento completo + proteção de alto desempenho.<br>Benefício: Protege a pintura e mantém o carro brilhando por mais tempo.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Técnico + Vitrificação Pro 9H 3Y</td>
+                            <td class="service-function">O que é: Proteção avançada com duração de até 3 anos.<br>Benefício: Evita riscos, desbotamento e facilita a limpeza.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Técnico + Vitrificação Pro 9H 5Y</td>
+                            <td class="service-function">O que é: Versão premium da proteção, com até 5 anos de durabilidade.<br>Benefício: Brilho extremo e proteção prolongada.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento RAP TEMA (casca de laranja)</td>
+                            <td class="service-function">O que é: Polimento que remove irregularidades na pintura.<br>Benefício: Superfície lisa, reflexo espelhado e acabamento perfeito.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Vitrificação de Farol</td>
+                            <td class="service-function">O que é: Proteção aplicada sobre o farol.<br>Benefício: Evita amarelamento e mantém a claridade.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Restauramento de Farol</td>
+                            <td class="service-function">O que é: Recuperação do farol desgastado.<br>Benefício: Clareia o farol e melhora a iluminação.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Restauramento de Farol com Polímero</td>
+                            <td class="service-function">O que é: Recuperação + proteção extra.<br>Benefício: Farol bonito por mais tempo.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Pintura Completa + Polimento</td>
+                            <td class="service-function">O que é: Repintura geral com acabamento final.<br>Benefício: Visual de carro novo e brilho intenso.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Pintura de Peças Avulsas</td>
+                            <td class="service-function">O que é: Pintura feita em partes específicas.<br>Benefício: Corrige danos sem repintar o carro inteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Descontaminação de Pintura + Proteção</td>
+                            <td class="service-function">O que é: Limpeza profunda + camada protetora.<br>Benefício: Tira a aspereza e protege contra novos danos.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Sitilização das Rodas</td>
+                            <td class="service-function">O que é: Limpeza e acabamento nas rodas.<br>Benefício: Realça o visual e valoriza o conjunto do carro.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Restauração de Plásticos</td>
+                            <td class="service-function">O que é: Recuperação da cor original dos plásticos.<br>Benefício: Acaba com o aspecto desbotado.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Restauração de Vidros</td>
+                            <td class="service-function">O que é: Tratamento para melhorar os vidros.<br>Benefício: Mais clareza e segurança na direção.</td>
+                        </tr>
+                        <!-- Novos serviços adicionados -->
+                        <tr>
+                            <td class="service-name">Polimento de Tanques</td>
+                            <td class="service-function">O que é: Limpeza e polimento no tanque.<br>Benefícios: Deixa o tanque com brilho de novo, valorizando o automóvel.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Espelhado Fora do Lugar</td>
+                            <td class="service-function">O que é: A peça é retirada para fazer um polimento completo e detalhado.<br>Benefícios: Brilho mais forte e acabamento mais caprichado.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento Espelhado no Lugar</td>
+                            <td class="service-function">O que é: Polimento feito com a peça no próprio veículo.<br>Benefícios: Deixa um ótimo brilho, sem precisar desmontar.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento de Caminhão</td>
+                            <td class="service-function">O que é: Polimento da lataria e partes metálicas do caminhão.<br>Benefícios: Deixa o caminhão com aparência nova e brilhando.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento de Alumínio</td>
+                            <td class="service-function">O que é: Polimento em peças de alumínio, como tanques e caixas.<br>Benefícios: Tira manchas e devolve o brilho original.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento de Rodas de Alumínio</td>
+                            <td class="service-function">O que é: Polimento específico nas rodas de alumínio.<br>Benefícios: Rodas ficam limpas, brilhantes e com cara de novas.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Polimento de Carreta</td>
+                            <td class="service-function">O que é: Polimento de partes da carreta.<br>Benefícios: Valoriza a carreta e melhora o visual geral.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Higienização (caminhão, carretas)</td>
+                            <td class="service-function">O que é: Limpeza profunda do interior de caminhões e carretas.<br>Benefícios: Remove sujeira, elimina bactérias e deixa o ambiente cheiroso.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Pretinho</td>
+                            <td class="service-function">O que é: Produto aplicado nos pneus para dar brilho e proteção.<br>Benefícios: Pneus mais bonitos, com visual de novo e bem cuidados.</td>
+                        </tr>
+                        <tr>
+                            <td class="service-name">Pintura de Rodas (Carretas e Caminhões)</td>
+                            <td class="service-function">O que é: Pintura nas rodas para cobrir ferrugem e desgaste.<br>Benefícios: Roda renovada, com proteção e ótimo visual.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Todos os direitos reservados | PINTURA HIDRO ARTS</p>
+            <p><a href="https://instagram.com/pintura_hidro_arts" target="_blank">@pintura_hidro_arts</a> | +55 79 9938-4995</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.services-table tbody tr').forEach(row => {
+            row.addEventListener('mouseenter', function () {
+                this.style.transition = 'all 0.3s ease';
+                this.style.transform = 'translateX(5px)';
+                this.style.boxShadow = '0 2px 8px rgba(255, 215, 0, 0.3)';
+            });
+            row.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
